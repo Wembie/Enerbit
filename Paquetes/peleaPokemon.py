@@ -53,7 +53,7 @@ def pelear( pokemonA, pokemonB ):
             print( f"{ sucesor[ 'name' ] } ha roto la defensa de { iniciador[ 'name' ] } en un 20%" )
             print( f"Defensa Antes: { defensaActual }, Defensa Ahora: { iniciador[ 'defense' ] } ")
         ataque = max( 0, sucesor[ 'attack' ] - iniciador[ 'defense' ] )
-        sucesor[ 'hp' ] -= ataque
+        iniciador[ 'hp' ] -= ataque
         if ataque:
             print( f"ATAQUE ACERTADO!!!!, { sucesor[ 'name' ] } logra hacer un daño de { ataque } a { iniciador[ 'name' ] }" )
             if sucesor[ 'hp' ] <= 0:
