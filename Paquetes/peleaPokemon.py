@@ -60,5 +60,5 @@ def pelear( pokemonA, pokemonB ):
                 print( f"\n{ iniciador[ 'name' ] } ha sido derrotado. { sucesor[ 'name' ] } es el ganador!, FELICIDADES!!!!!!" )
                 return sucesor[ 'name' ], iniciador[ 'name' ]
         else:
-            print( f"Lastimosamente el ataque de { iniciador[ 'name' ] } no fue lo suficiente fuerte como para superar la defensa de { sucesor[ 'name' ] }." )
+            print( f"Lastimosamente el ataque de { sucesor[ 'name' ] } no fue lo suficiente fuerte como para superar la defensa de { iniciador[ 'name' ] }." )
             reduccionDefensaA += 1
