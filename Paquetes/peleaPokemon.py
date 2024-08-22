@@ -56,7 +56,7 @@ def pelear( pokemonA, pokemonB ):
         iniciador[ 'hp' ] -= ataque
         if ataque:
             print( f"ATAQUE ACERTADO!!!!, { sucesor[ 'name' ] } logra hacer un daño de { ataque } a { iniciador[ 'name' ] }" )
-            if sucesor[ 'hp' ] <= 0:
+            if iniciador[ 'hp' ] <= 0:
                 print( f"\n{ iniciador[ 'name' ] } ha sido derrotado. { sucesor[ 'name' ] } es el ganador!, FELICIDADES!!!!!!" )
                 return sucesor[ 'name' ], iniciador[ 'name' ]
         else:
